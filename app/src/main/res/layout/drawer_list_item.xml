@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/buttons_height"
+    android:background="@drawable/list_selector"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="20dp"
+        android:layout_height="fill_parent"
+        android:src="@drawable/drawer_home"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="20dp"
+        android:adjustViewBounds="true" />
+
+    <com.kaspian.book.TextViewPlus
+        foo:customFont="fonts/sans.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttons_height"
+        android:text="درباره‌ما"
+        android:textSize="@dimen/small_font"
+        android:textColor="@color/text_dark"
+        android:id="@+id/drawertitle"
+        android:gravity="center_vertical|right"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/icon"
+        android:layout_toStartOf="@+id/icon" />
+
+</RelativeLayout>

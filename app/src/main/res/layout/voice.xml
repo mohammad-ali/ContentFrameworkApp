@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/whitebox"
+    android:gravity="center_vertical"
+    android:id="@+id/parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/fl"
+            android:src="@drawable/play"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/pp"
+            android:src="@drawable/play"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <ProgressBar
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/loading"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/mothercolor"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="3dp"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.kaspian.book.TextViewPlus
+                foo:customFont="fonts/sans.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--:--"
+                android:id="@+id/totaltime"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/very_small_font"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginLeft="15dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|right">
+
+                <com.kaspian.book.TextViewPlus
+                    foo:customFont="fonts/sans.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/warn"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/very_small_font"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <SeekBar
+            android:thumb="@drawable/tumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/voiceseek" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Risky Project Location:
+-----------------------
+The tools *should* handle project locations in any directory. However,
+due to bugs, placing projects in directories containing spaces in the
+path, or characters like ", ' and &, have had issues. We're working to
+eliminate these bugs, but to save yourself headaches you may want to
+move your project to a location where this is not a problem.
+E:\WorkSpace\BookSource3\BETA 1\AndroidBookSource3
+                             -                    
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => chromeview\src\main\AndroidManifest.xml
+* assets\ => chromeview\src\main\assets\
+* libs\armeabi-v7a\libchromeview.so => chromeview\src\main\jniLibs\armeabi-v7a\libchromeview.so
+* libs\guava_javalib.jar => chromeview\libs\guava_javalib.jar
+* libs\jsr_305_javalib.jar => chromeview\libs\jsr_305_javalib.jar
+* res\ => chromeview\src\main\res\
+* src\ => chromeview\src\main\java\
+* src\com\googlecode\eyesfree\braille\display\BrailleDisplayProperties.aidl => chromeview\src\main\aidl\com\googlecode\eyesfree\braille\display\BrailleDisplayProperties.aidl
+* src\com\googlecode\eyesfree\braille\display\BrailleInputEvent.aidl => chromeview\src\main\aidl\com\googlecode\eyesfree\braille\display\BrailleInputEvent.aidl
+* src\com\googlecode\eyesfree\braille\display\IBrailleService.aidl => chromeview\src\main\aidl\com\googlecode\eyesfree\braille\display\IBrailleService.aidl
+* src\com\googlecode\eyesfree\braille\display\IBrailleServiceCallback.aidl => chromeview\src\main\aidl\com\googlecode\eyesfree\braille\display\IBrailleServiceCallback.aidl
+* src\com\googlecode\eyesfree\braille\selfbraille\ISelfBrailleService.aidl => chromeview\src\main\aidl\com\googlecode\eyesfree\braille\selfbraille\ISelfBrailleService.aidl
+* src\com\googlecode\eyesfree\braille\selfbraille\WriteData.aidl => chromeview\src\main\aidl\com\googlecode\eyesfree\braille\selfbraille\WriteData.aidl
+* src\com\googlecode\eyesfree\braille\translate\ITranslatorService.aidl => chromeview\src\main\aidl\com\googlecode\eyesfree\braille\translate\ITranslatorService.aidl
+* src\com\googlecode\eyesfree\braille\translate\ITranslatorServiceCallback.aidl => chromeview\src\main\aidl\com\googlecode\eyesfree\braille\translate\ITranslatorServiceCallback.aidl
+* src\org\chromium\base\ActivityState.template => chromeview\src\main\resources\org\chromium\base\ActivityState.template
+* src\org\chromium\base\MemoryPressureLevelList.template => chromeview\src\main\resources\org\chromium\base\MemoryPressureLevelList.template
+* src\org\chromium\content\browser\GestureEventType.template => chromeview\src\main\resources\org\chromium\content\browser\GestureEventType.template
+* src\org\chromium\content\browser\input\PopupItemType.template => chromeview\src\main\resources\org\chromium\content\browser\input\PopupItemType.template
+* src\org\chromium\content\browser\OWNERS => chromeview\src\main\resources\org\chromium\content\browser\OWNERS
+* src\org\chromium\content\browser\PageTransitionTypes.template => chromeview\src\main\resources\org\chromium\content\browser\PageTransitionTypes.template
+* src\org\chromium\content\browser\SpeechRecognitionError.template => chromeview\src\main\resources\org\chromium\content\browser\SpeechRecognitionError.template
+* src\org\chromium\content\common\IChildProcessCallback.aidl => chromeview\src\main\aidl\org\chromium\content\common\IChildProcessCallback.aidl
+* src\org\chromium\content\common\IChildProcessService.aidl => chromeview\src\main\aidl\org\chromium\content\common\IChildProcessService.aidl
+* src\org\chromium\content\common\ResultCodes.template => chromeview\src\main\resources\org\chromium\content\common\ResultCodes.template
+* src\org\chromium\content\common\TopControlsState.template => chromeview\src\main\resources\org\chromium\content\common\TopControlsState.template
+* src\org\chromium\content_public\DEPS => chromeview\src\main\resources\org\chromium\content_public\DEPS
+* src\org\chromium\media\ImageFormat.template => chromeview\src\main\resources\org\chromium\media\ImageFormat.template
+* src\org\chromium\net\IRemoteAndroidKeyStore.aidl => chromeview\src\main\aidl\org\chromium\net\IRemoteAndroidKeyStore.aidl
+* src\org\chromium\net\IRemoteAndroidKeyStoreCallbacks.aidl => chromeview\src\main\aidl\org\chromium\net\IRemoteAndroidKeyStoreCallbacks.aidl
+* src\OWNERS => chromeview\src\main\resources\OWNERS
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_light">
+
+
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="?android:attr/actionBarSize"
+                    android:background="@mipmap/bg1"></RelativeLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:clickable="true"
+                    android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="60"
+                        android:gravity="center|top"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="?android:attr/actionBarSize"
+                            android:background="@color/mothercolor"
+                            android:gravity="center|right">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <com.kaspian.book.TextViewPlus
+                                    foo:customFont="fonts/sans_bold.ttf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/app_name"
+                                    android:textSize="@dimen/small_font"
+                                    android:gravity="center"
+                                    android:textColor="@color/text_light"
+                                    android:layout_marginTop="1dp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/opener"
+                                    android:src="@drawable/ic_drawer"
+                                    android:adjustViewBounds="true"
+                                    android:paddingRight="15dp"
+                                    android:paddingBottom="16dp"
+                                    android:paddingTop="16dp"
+                                    android:paddingLeft="25dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView6"
+                            android:src="@drawable/toolbar_shadow"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/header"
+                            android:padding="@dimen/header_pad" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="40"
+                        android:gravity="center|bottom"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center|bottom"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginBottom="2dp"
+                                android:gravity="center|bottom"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/enterbtn"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="0dp"
+                                    android:background="@drawable/themainbutton"
+                                    android:text="@string/enter_text"
+                                    android:textColor="@color/text_light"
+                                    android:textSize="@dimen/small_font"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginLeft="20dp" />
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center|bottom"
+                                        android:orientation="horizontal"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_marginTop="2dp">
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp">
+
+                                            <ImageView
+                                                android:layout_width="@dimen/mainbut"
+                                                android:layout_height="@dimen/mainbut"
+                                                android:id="@+id/fav"
+                                                android:src="@drawable/bookmark_b"
+                                                android:layout_marginBottom="5dp" />
+
+                                            <com.kaspian.book.TextViewPlus
+                                                foo:customFont="fonts/sans.ttf"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/main_icon1"
+                                                android:textSize="@dimen/small_font"
+                                                android:textColor="@color/text_dark" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp"
+                                            android:id="@+id/ratel">
+
+                                            <ImageView
+                                                android:layout_width="@dimen/mainbut"
+                                                android:layout_height="@dimen/mainbut"
+                                                android:id="@+id/rate"
+                                                android:layout_marginBottom="5dp"
+                                                android:src="@drawable/button_more" />
+
+                                            <com.kaspian.book.TextViewPlus
+                                                foo:customFont="fonts/sans.ttf"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/main_icon2"
+                                                android:textSize="@dimen/small_font"
+                                                android:textColor="@color/text_dark" />
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp">
+
+                                            <ImageView
+                                                android:layout_width="@dimen/mainbut"
+                                                android:layout_height="@dimen/mainbut"
+                                                android:id="@+id/set"
+                                                android:src="@drawable/button_settings"
+                                                android:layout_marginBottom="5dp" />
+
+                                            <com.kaspian.book.TextViewPlus
+                                                foo:customFont="fonts/sans.ttf"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/main_icon3"
+                                                android:textSize="@dimen/small_font"
+                                                android:textColor="@color/text_dark" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginRight="5dp">
+
+                                            <ImageView
+                                                android:layout_width="@dimen/mainbut"
+                                                android:layout_height="@dimen/mainbut"
+                                                android:id="@+id/about"
+                                                android:src="@drawable/button_info"
+                                                android:layout_marginBottom="5dp" />
+
+                                            <com.kaspian.book.TextViewPlus
+                                                foo:customFont="fonts/sans.ttf"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/small_font"
+                                                android:text="@string/main_icon4"
+                                                android:textColor="@color/text_dark" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </FrameLayout>
+
+            <!-- Listview to display slider menu -->
+            <ListView
+                android:id="@+id/list_slidermenu"
+                android:layout_width="@dimen/nav"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:listSelector="@drawable/list_selector"
+                android:background="@color/list_background"/>
+        </android.support.v4.widget.DrawerLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<resources>
+    <!-- Default screen padding, -->
+    <dimen name="small_pad">15dp</dimen>
+    <dimen name="medium_pad">25dp</dimen>
+    <dimen name="phablet_pad">40dp</dimen>
+    <dimen name="tablet_pad">60dp</dimen>
+
+    <dimen name="padd">35dp</dimen>
+    <dimen name="padd2">70dp</dimen>
+    <dimen name="circlebutts">110dp</dimen>
+    <dimen name="mainbut">80dp</dimen>
+    <dimen name="numbers_spacing">17dp</dimen>
+    <dimen name="settings_pad">15dp</dimen>
+    <dimen name="lastcheck_marg">15dp</dimen>
+    <dimen name="lastcheck_marg2">30dp</dimen>
+    <!--font size-->
+
+    <dimen name="very_small_font">14dp</dimen>
+    <dimen name="small_font">15dp</dimen>
+    <dimen name="medium_font">16dp</dimen>
+    <dimen name="big_font">18dp</dimen>
+    <dimen name="very_big_font">22dp</dimen>
+
+    <dimen name="circledot">15dp</dimen>
+
+    <dimen name="font_size">24dp</dimen>
+    <dimen name="buttons_height">52dp</dimen>
+    <dimen name="buttons_width">155dp</dimen>
+    <dimen name="buttons_height2x">104dp</dimen>
+
+    <dimen name="forgetkeyspad">25dp</dimen>
+    <dimen name="dangerforgetkeyspad">16dp</dimen>
+
+    <dimen name="choosebackground_width">230dp</dimen>
+    <dimen name="choosebackground_height">409dp</dimen>
+
+    <dimen name="header_pad">35dp</dimen>
+
+    <dimen name="toggle_width">60dp</dimen>
+    <dimen name="toggle_height">30dp</dimen>
+
+    <dimen name="about_padding">85dp</dimen>
+
+    <dimen name="nav">370dp</dimen>
+
+</resources>

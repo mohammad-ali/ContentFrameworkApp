@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="about_padding">110dp</dimen>
+</resources>

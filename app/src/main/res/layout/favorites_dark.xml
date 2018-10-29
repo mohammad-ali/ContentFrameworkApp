@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/text_light"
+    android:orientation="vertical" >
+
+    <!-- List View -->
+
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:background="@color/night_back">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView6"
+                android:src="@drawable/toolbar_shadow"
+                android:scaleType="fitXY"
+                android:layout_marginTop="?android:attr/actionBarSize" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/empty"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/empty_back"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbarSize="10dp"
+                android:paddingRight="2dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+                android:dividerHeight="0dp"
+                android:layout_marginTop="?android:attr/actionBarSize" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/mothercolor"
+                android:gravity="center|right">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <com.kaspian.book.TextViewPlus
+                        foo:customFont="fonts/sans_bold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/favorites"
+                        android:textSize="@dimen/small_font"
+                        android:gravity="center"
+                        android:textColor="@color/text_light"
+                        android:layout_marginTop="1dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/opener"
+                        android:src="@drawable/ic_drawer"
+                        android:adjustViewBounds="true"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        android:paddingLeft="25dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+
+
+        <!-- Listview to display slider menu -->
+        <ListView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="@dimen/nav"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@drawable/list_selector"
+            android:background="@color/list_background2"/>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

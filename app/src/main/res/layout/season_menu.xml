@@ -1,0 +1,176 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/allpages_background">
+
+
+
+
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/toolbar_shadow"
+                    android:scaleType="fitXY"
+                    android:layout_below="@+id/linearLayout4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:background="@color/mothercolor"
+                    android:gravity="center|right"
+                    android:id="@+id/linearLayout4">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sreachfor"
+                            android:src="@drawable/button_search"
+                            android:adjustViewBounds="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <com.kaspian.book.TextViewPlus
+                            foo:customFont="fonts/sans_bold.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/seasons"
+                            android:textSize="@dimen/small_font"
+                            android:gravity="center"
+                            android:textColor="@color/text_light"
+                            android:layout_marginTop="1dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/opener"
+                            android:src="@drawable/ic_drawer"
+                            android:adjustViewBounds="true"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="16dp"
+                            android:paddingTop="16dp"
+                            android:paddingLeft="25dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@android:id/list"
+                    android:divider="@color/dsb_disabled_color"
+                    android:dividerHeight="0dp"
+                    android:layout_width="fill_parent"
+                    android:scrollbarSize="10dp"
+                    android:paddingRight="2dp"
+                    android:scrollbarStyle="insideOverlay"
+                    android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@+id/relativeLayout"
+                    android:layout_below="@+id/linearLayout4">
+                </ListView>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/relativeLayout">
+                    <!--mustchange!  replace all tokens-->
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/guid2"
+                android:id="@+id/guid_layout"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="?android:attr/actionBarSize"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/mothercolor"
+                    android:gravity="center"
+                    android:clickable="false">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/button_search" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/guidb"
+                    android:layout_marginBottom="60dp"
+                    android:background="@drawable/themainbutton"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/ok"
+                    android:textSize="@dimen/small_font" />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+        <!-- Listview to display slider menu -->
+        <ListView
+            android:id="@+id/list_slidermenu"
+            android:layout_width="@dimen/nav"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@drawable/list_selector"
+            android:background="@color/list_background"/>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

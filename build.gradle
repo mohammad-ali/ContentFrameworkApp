@@ -1,0 +1,32 @@
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.0'
+
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+allprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+        google()
+    }
+}
+
+// Developer : Saeed Arianmanesh
+
+// Website : saeedarianmanesh.com
+
+//  S A E E D A R I A N M A N E S H . C O M

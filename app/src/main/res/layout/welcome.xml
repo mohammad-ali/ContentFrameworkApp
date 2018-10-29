@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kaspian.book.Welcome"
+    android:padding="@dimen/about_padding"
+    android:background="#f6f6f6"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65"
+        android:gravity="bottom|center"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView5"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/splash"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:gravity="top|center">
+        <com.kaspian.book.TextViewPlus
+            foo:customFont="fonts/sans_bold.ttf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/w1"
+            android:textSize="@dimen/very_big_font"
+            android:textColor="@color/text_dark"
+            android:id="@+id/header"
+            android:singleLine="true"
+
+            android:paddingTop="1dp"
+            android:gravity="center" />
+        <com.kaspian.book.TextViewPlus
+            foo:customFont="fonts/sans.ttf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/w2"
+            android:textSize="@dimen/big_font"
+            android:textColor="#3e3e3e"
+            android:id="@+id/header2"
+            android:singleLine="true"
+
+            android:paddingTop="1dp"
+            android:gravity="center" />
+
+        <com.kaspian.book.TextViewPlus
+            foo:customFont="fonts/sans.ttf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/w3"
+            android:textSize="@dimen/medium_font"
+            android:textColor="@color/welcome3"
+            android:id="@+id/header3"
+            android:singleLine="true"
+
+            android:paddingTop="1dp"
+            android:gravity="center"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+</LinearLayout>
+

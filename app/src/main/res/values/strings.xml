@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--  Developer info  -->
+
+    <string name="app_name">اربعین دانشجویی استان قزوین</string>
+    <string name="resources">ناحیه دانشجویی استان قزوین</string>
+    <string name="comment">امید است پیشکشی باشد به درگاه ابا عبدالله الحسین (ع)</string>
+
+
+    <!--  Texts in App  -->
+    <string name="enter_text">لیست خدمات</string>
+    <string name="drawer_name">السلام علیک یا ابا عبدالله الحسین</string>
+    <string name="aboutus">درباره ما</string>
+    <string name="content">لیست خدمات</string>
+    <string name="seasons">خدمات</string>
+    <string name="favorites">علاقمندی‌ها</string>
+    <string name="settings">تنظیمات</string>
+    <string name="sampletext">متن نمونه: بررسی فونت</string>
+    <string name="selectsize">انتخاب اندازه فونت</string>
+    <string name="selectfont">انتخاب نوع فونت</string>
+    <string name="keepon">روشن ماندن صفحه نمایش</string>
+    <string name="nightmode">حالت مطالعه در شب</string>
+    <string name="music">موزیک پس زمینه</string>
+    <string name="emailtodeveloper">ارسال ایمیل به توسعه دهنده</string>
+    <string name="quicksettingstitle">انتخاب نوع و اندازه فونت:</string>
+    <string name="site">سایت توسعه دهنده</string>
+    <string name="products">محصولات توسعه دهنده</string>
+    <string name="develop_by">طراحی و توسعه: </string>
+    <string name="res">منابع: </string>
+    <string name="comm">توضیحات: </string>
+    <string name="version">نسخه: </string>
+    <string name="ok">متوجه ام!</string>
+    <string name="addto_fav">به لیست علاقه‌مندی‌هااضافه شد.</string>
+    <string name="remove_fav">از علاقه‌مندی‌ها حذف شد.</string>
+    <string name="warning">حالت مطالعه در شب فعال است</string>
+    <string name="exittoast">برای خروج یکبار دیگر بازگشت را بزنید</string>
+    <string name="no_url">آدرس یافت نشد</string>
+    <string name="main_icon1">علاقه‌مندی‌ها</string>
+    <string name="main_icon2">امتیاز</string>
+    <string name="main_icon3">تنظیمات</string>
+    <string name="main_icon4">درباره‌ما</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading_video">در حال بارگیری ویدیو</string>
+    <string name="video_cache">نیازمند اینترنت برای کش کردن ویدیو</string>
+    <string name="voice_cache">در حال انتقال به حافظه کش</string>
+
+    <string name="s1">محل اسکان و موکب ها</string>
+    <string name="s2">نکات آموزشی</string>
+    <string name="s3">آداب دعا</string>
+    <string name="s4">چند رسانه ای</string>
+
+
+    <!--Welcome Screen Texts-->
+    <string name="w1">اپلیکیشن راهنمای پیاده روی اربعین حسینی</string>
+    <string name="w2">ناحیه بسیج دانشجویی استان قزوین</string>
+    <string name="w3">التماس دعا</string>
+
+
+
+    <!--Developer: kaspianarianmaanesh . com-->
+
+    <string-array name="font_selector">
+        <item>ایران سنس</item>
+        <item>دروید نسخ</item>
+        <item>یکان</item>
+        <item>ادوبی عربیک</item>
+        <item>کودک</item>
+        <item>فونت پیشفرض گوشی</item>
+
+    </string-array>
+
+    <!-- Nav Drawer Menu Items -->
+
+    <string-array name="nav_drawer_items">
+        <item>@string/app_name</item>
+        <item>صفحه اصلی</item>
+        <item>لیست مطالب</item>
+        <item>علاقه‌مندی‌ها</item>
+        <item>جستجو</item>
+        <item>تنظیمات</item>
+        <item>درباره‌ما</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+
+    <array name="nav_drawer_icons_dark">
+        <item>@mipmap/icon</item>
+        <item>@drawable/drawer_home</item>
+        <item>@drawable/drawer_menu</item>
+        <item>@drawable/drawer_fav</item>
+        <item>@drawable/drawer_search</item>
+        <item>@drawable/drawer_settings</item>
+        <item>@drawable/drawer_about</item>
+    </array>
+
+</resources>
+

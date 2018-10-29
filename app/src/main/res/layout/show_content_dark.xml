@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainl"
+    android:background="@color/text_light">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6"
+            android:src="@drawable/toolbar_shadow"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sc"
+            android:layout_gravity="center_horizontal|top"
+            android:fillViewport="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="0dp"
+            android:scrollbarSize="10dp"
+            android:paddingRight="2dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+            android:layout_above="@+id/linearLayout6"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:background="@color/night_back">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="8dp"
+                android:gravity="center"
+                android:id="@+id/contentlinear">
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/mothercolor"
+        android:measureWithLargestChild="false"
+        android:paddingRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+
+            <ImageView
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:id="@+id/bookmark_bar"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="9dp" />
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left" >
+
+            <ImageView
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:id="@+id/quicksettings"
+                android:src="@drawable/gear"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:id="@+id/sl">
+
+            <ImageView
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:id="@+id/share"
+                android:src="@drawable/share"
+                android:paddingLeft="2dp"
+                android:paddingTop="14dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="14dp" />
+        </LinearLayout>
+
+        <com.kaspian.book.TextViewPlus
+            foo:customFont="fonts/sans_bold.ttf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_bar"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:text="تیتر آموزش"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/small_font"
+            android:layout_marginTop="1dp" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/quicklayout"
+            android:clickable="true"
+            android:baselineAligned="false"
+            android:background="#303030"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="right"
+                android:gravity="center|right"
+                android:id="@+id/night"
+                android:background="@drawable/blackbox">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp">
+
+                    <com.kaspian.book.ToggleButton
+                        android:layout_width="@dimen/toggle_width"
+                        android:id="@+id/nightmode"
+                        toggle:onColor="@color/mothercolor"
+                        toggle:offColor="#5d5d5d"
+                        toggle:spotColor="#e3e3e3"
+                        toggle:offBorderColor="#5d5d5d"
+                        toggle:borderWidth="1dp"
+                        android:layout_height="@dimen/toggle_height" >
+                    </com.kaspian.book.ToggleButton>
+                </LinearLayout>
+
+                <com.kaspian.book.TextViewPlus
+                    foo:customFont="fonts/sans.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/nightmode"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/small_font"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <org.angmarch.views.NiceSpinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/quickspinner"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="8dp" />
+
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/quickseek"
+                app:dsb_min="10"
+                app:dsb_max="25"
+                app:dsb_progressColor="@color/mothercolor"
+                app:dsb_trackColor="@color/mothercolor"
+                app:dsb_indicatorColor="@color/mothercolor"
+                android:indeterminate="false"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="انجام"
+                android:id="@+id/quickdone"
+                android:background="@drawable/themainbutton"
+                android:textColor="#fff"
+                android:textSize="@dimen/small_font"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+</LinearLayout>
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout6"
+            android:focusableInTouchMode="true"
+            android:layout_alignParentBottom="true">
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/guid3"
+        android:id="@+id/guid_layout"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/mothercolor"
+                android:measureWithLargestChild="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left">
+
+
+                    <ImageView
+                        android:layout_width="?android:attr/actionBarSize"
+                        android:layout_height="?android:attr/actionBarSize"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="9dp"
+                        android:src="@drawable/not_bookmard" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left" >
+
+                    <ImageView
+                        android:layout_width="?android:attr/actionBarSize"
+                        android:layout_height="?android:attr/actionBarSize"
+                        android:src="@drawable/gear"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left" >
+
+                    <ImageView
+                        android:layout_width="?android:attr/actionBarSize"
+                        android:layout_height="?android:attr/actionBarSize"
+                        android:src="@drawable/share"
+                        android:paddingLeft="2dp"
+                        android:paddingTop="14dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="14dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/ok"
+            android:id="@+id/guidb"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/themainbutton"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:id="@+id/fullscreen"
+            android:visibility="gone"></RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+

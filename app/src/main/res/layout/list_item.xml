@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|right">
+
+        <ImageView
+            android:id="@+id/titleimage"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_gravity="right"
+            android:src="@drawable/listview_tag"
+            android:paddingRight="0dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <com.kaspian.book.TextViewPlus
+            foo:customFont="fonts/sans.ttf"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="تیتر اصلی هر ایتم "
+            android:id="@+id/Title_of_lv_items"
+            android:textSize="@dimen/small_font"
+            android:singleLine="false"
+            android:textColor="#181818"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/titleimage"
+            android:gravity="center|right"
+            android:layout_toLeftOf="@+id/titleimage" />
+
+    </RelativeLayout>
+
+</LinearLayout>

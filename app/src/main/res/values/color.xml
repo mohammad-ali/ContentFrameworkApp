@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--CHANGE THIS-->
+
+    <color name="mothercolor">#ff0e3e</color>
+    <color name="mothercolor_darker">#cb0a31</color>
+
+    <color name="buttoncolor">#ffa600</color>
+    <color name="buttoncolor_darker">#f06c00</color>
+
+    <color name="scrollbarcolor">#00bfff</color>
+
+    <color name="circlecolor">#00cc92</color>
+
+    <color name="divider">#e0e0e0</color>
+
+
+    <color name="welcome3">#00b17f</color>
+
+
+    <color name="allpages_background">#fbfbfb</color>
+
+
+    <!--static colors colors! DO NOT CHANGE THIS SECTION-->
+
+    <color name="text_dark">#181818</color>
+    <color name="gray_dark">#d7d7d7</color>
+    <color name="text_light">#f7f7f7</color>
+    <color name="text_middle">#8c8c8c</color>
+    <color name="light_gray">#fff5f5f5</color>
+    <color name="list_background">#f7f7f7</color>
+    <color name="list_background_pressed">#dadada</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="night_back">#252525</color>
+    <color name="night_back_lighter">#353535</color>
+    <color name="link">#00a3e9</color>
+    <color name="error">#f00000</color>
+    <color name="list_background2">#333333</color>
+    <color name="list_background_pressed2">#525252</color>
+    <color name="uvv_gray">#969696</color>
+    <color name="uvv_black">#ff000000</color>
+    <color name="uvv_light_gray">#ffF0F0F0</color>
+    <color name="uvv_titlebar_bg">#7f000000</color>
+
+</resources>
+

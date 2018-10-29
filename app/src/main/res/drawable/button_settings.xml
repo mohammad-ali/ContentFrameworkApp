@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_pressed="false" android:drawable="@mipmap/settings" />
+    <item android:state_focused="true" android:state_pressed="true" android:drawable="@mipmap/settings_c" />
+    <item android:state_focused="false" android:state_pressed="true" android:drawable="@mipmap/settings_c" />
+    <item android:drawable="@mipmap/settings" />
+</selector>
